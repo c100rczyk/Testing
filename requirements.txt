@@ -1,2 +1,3 @@
 numpy==Y.YY.Y
 pandas==X.XX.X
+seabor==0.11.2
