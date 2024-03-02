@@ -1,0 +1,39 @@
+Bazy Danych : temat projektu
+
+SYSTEM zarządzania projektami IT:
++ rejestracja projektów, zadań, etapów i terminów
+	(opisy, priorytety,...)
++ przydział zasobów i pracowników do projektu
+	(nadawanie termimnów, przydzielanie do konkretnych 
+	członków zespołu, zadania w ramach projektu, przydział do projektów/zadań)
++ śledzenie postępów projektu i zarządzanie nimi
++ Harmonogramy:
++ wyświetlanie info na temat pewnych statystyk
+
+
+ Tabele baz danych:
+        Projekty: Tabela przechowująca informacje o wszystkich projektach, takie jak nazwa, opis, data rozpoczęcia, data zakończenia, priorytet.
+        Zadania: Tabela zawierająca informacje o zadaniach przypisanych do poszczególnych projektów, takie jak nazwa, opis, data rozpoczęcia,termin
+        wykonania, status, przypisany użytkownik
+ Użytkownicy: Tabela przechowująca dane o wszystkich użytkownikach systemu, takie jak nazwa użytkownika, adres e-mail, hasło, uprawnienia.
+        Zespoły: Tabela przechowująca informacje o zespołach pracowniczych, ich składzie, liderach itp.
+        Harmonogramy: Tabela zawierająca plany czasowe dla projektów, etapów i zadań.
+        Dokumentacja: Tabela przechowująca dokumentację projektową, taką jak specyfikacje, notatki, raporty postępów.
+        Historia zmian: Tabela przechowująca historię zmian w zadaniach, projektach itp.
+
+ Relacje między tabelami:
+        Tabela projektów może mieć relacje z tabelami zadaniami, harmonogramami, dokumentacją i historią zmian.
+        Tabela zadaniami może mieć relacje z tabelami użytkowników, projektów i harmonogramami.
+        Tabela użytkowników może mieć relacje z tabelą zespołów.
+        Tabela harmonogramów może mieć relacje z tabelami projektów i zadaniami.
+
+ Indeksy i klucze obce:
+        Indeksy mogą być stosowane do przyspieszenia wyszukiwania i sortowania danych.
+        Klucze obce są istotne do utrzymania spójności danych między różnymi tabelami.
+
+ Procedury składowane i wyzwalacze:
+        Procedury składowane mogą być wykorzystywane do wykonywania określonych operacji na danych, takich jak dodawanie nowego zadania do projektu.
+        Wyzwalacze mogą reagować na określone zdarzenia w bazie danych, np. automatycznie aktualizując status zadania po jego zakończeniu.
+
+ Zabezpieczenia:
+        rejestracja, logowanie i autoryzacja użytkowników dla ochrony danych w systemie.
