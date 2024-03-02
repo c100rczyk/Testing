@@ -1,0 +1,2 @@
+numpy==Y.YY.Y
+pandas==X.XX.X
